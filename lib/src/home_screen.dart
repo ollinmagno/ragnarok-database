@@ -22,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 iconSize: 32,
                 icon: Icon(Icons.format_list_bulleted),
                 color: Colors.grey.shade500,
+                onPressed: (){},
                 //onPressed: () => Scaffold.of(context).openDrawer(),
               ),
               Positioned(
@@ -58,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   children: <Widget>[
                     ColumnCard(
-                        img: 'assets/images/poring.png', text: 'Monsters'),
+                        img: 'assets/images/monster.png', text: 'Monsters'),
                     SizedBox(width: 16),
                     ColumnCard(
                       img: 'assets/images/poring.png',
@@ -69,19 +70,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(height: 16),
                 Row(
                   children: <Widget>[
-                    ColumnCard(img: '', text: 'Items'),
+                    ColumnCard(img: 'assets/images/potion.png', text: 'Items'),
                     SizedBox(width: 16),
-                    ColumnCard(img: '', text: 'Cards'),
+                    ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment'),
                   ],
                 ),
                 SizedBox(height: 16),
                 Row(
                   children: <Widget>[
-                    ColumnCard(img: '', text: 'Equipment'),
+                    ColumnCard(img: 'assets/images/card-frog.png', text: 'Cards'),
                     SizedBox(
                       width: 16,
                     ),
-                    ColumnCard(img: '', text: 'Maps',),
+                    ColumnCard(img: 'assets/images/maps.png', text: 'Maps',),
                   ],
                 )
               ],

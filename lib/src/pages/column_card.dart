@@ -10,17 +10,18 @@ class ColumnCard extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: 98,
-          width: 168,
+          height: 112,
+          width: 172,
           decoration: BoxDecoration(
               color: Colors.grey.shade300,
               borderRadius: BorderRadius.circular(16.0)
           ),
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Image.asset(img),
-                Text(text, style: TextStyle(fontSize: 16.0),),
+                Image.asset(img, height: 70),
+                Text(text, style: TextStyle(fontSize: 16.0, fontStyle: FontStyle.italic),),
               ],
             ),
           ),
