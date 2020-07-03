@@ -8,6 +8,11 @@ class PetsPage extends StatefulWidget {
 class _PetsPageState extends State<PetsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Pets'),
+        centerTitle: true,
+      ),
+    );
   }
 }

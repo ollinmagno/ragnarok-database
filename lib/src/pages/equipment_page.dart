@@ -8,6 +8,11 @@ class EquipmentPage extends StatefulWidget {
 class _EquipmentPageState extends State<EquipmentPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Equipments'),
+        centerTitle: true,
+      ),
+    );
   }
 }
