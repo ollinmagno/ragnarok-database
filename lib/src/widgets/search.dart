@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class Search extends StatelessWidget {
   @override
@@ -16,6 +18,7 @@ class Search extends StatelessWidget {
                 ),
                 child: TextField(
                   decoration: InputDecoration(
+                    contentPadding: EdgeInsets.only(top: 14.2),
                     hintText: 'Search',
                     border: InputBorder.none,
                     prefixIcon: Icon(
