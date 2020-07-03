@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ragnarok/src/pages/column_card.dart';
 import 'package:ragnarok/src/widgets/drawer_list.dart';
 import 'package:ragnarok/src/widgets/search.dart';
-//import 'package:google_fonts/google_fonts.dart';
 //import 'dart:math' as math;
 
 class HomeScreen extends StatefulWidget {
