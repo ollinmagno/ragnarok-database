@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ragnarok/src/pages/column_card.dart';
+import 'package:ragnarok/src/widgets/column_card.dart';
 import 'package:ragnarok/src/widgets/drawer_list.dart';
 import 'package:ragnarok/src/widgets/search.dart';
 //import 'dart:math' as math;
@@ -58,30 +58,31 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   children: <Widget>[
                     ColumnCard(
-                        img: 'assets/images/monster.png', text: 'Monsters'),
+                        img: 'assets/images/monster.png', text: 'Monsters', pageRoute: 'monsters',),
                     SizedBox(width: 16),
                     ColumnCard(
                       img: 'assets/images/poring.png',
                       text: 'Pets',
+                      pageRoute: 'pets',
                     ),
                   ],
                 ),
                 SizedBox(height: 16),
                 Row(
                   children: <Widget>[
-                    ColumnCard(img: 'assets/images/potion.png', text: 'Items'),
+                    ColumnCard(img: 'assets/images/potion.png', text: 'Items', pageRoute: 'items',),
                     SizedBox(width: 16),
-                    ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment'),
+                    ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment', pageRoute: 'equipment',),
                   ],
                 ),
                 SizedBox(height: 16),
                 Row(
                   children: <Widget>[
-                    ColumnCard(img: 'assets/images/card-frog.png', text: 'Cards'),
+                    ColumnCard(img: 'assets/images/card-frog.png', text: 'Cards', pageRoute: 'letters'),
                     SizedBox(
                       width: 16,
                     ),
-                    ColumnCard(img: 'assets/images/maps.png', text: 'Maps',),
+                    ColumnCard(img: 'assets/images/maps.png', text: 'Maps', pageRoute: 'maps'),
                   ],
                 )
               ],
