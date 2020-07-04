@@ -32,33 +32,47 @@ class _EquipmentPageState extends State<EquipmentPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Equipments'),
-        centerTitle: true,
-        backgroundColor: appBarColor,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.grid_on, size: 20),
-            onPressed: () {
-              print("Lista");
-              setState(() {
-                _gridView = false;
-              });
-            },
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Equipments'),
+          centerTitle: true,
+          backgroundColor: appBarColor,
+          bottom: TabBar(
+            tabs: <Widget>[
+              Tab(
+                child: IconButton(
+                  icon: Icon(Icons.grid_on, size: 18,),
+                  onPressed: (){
+                    print("Grid");
+                    setState(() {
+                      _gridView = true;
+                    });
+                  },
+                ),
+              ),
+              Tab(
+                child: IconButton(
+                  icon: Icon(Icons.format_list_bulleted, size: 18,),
+                  onPressed: () {
+                    print("Lista");
+                    setState(() {
+                      _gridView = false;
+                    });
+                  },
+                ),
+              ),
+            ],
           ),
-          IconButton(
-            icon: Icon(Icons.list, size: 26),
-            onPressed: () {
-              print("Grid");
-              setState(() {
-                _gridView = true;
-              });
-            },
-          )
-        ],
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            _body(),
+            _body(),
+          ],
+        ),
       ),
-      body: _body(),
     );
   }
 }
