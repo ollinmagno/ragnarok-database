@@ -1,33 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:ragnarok/src/utils/colors.dart';
 
+
 class EquipmentPage extends StatefulWidget {
   @override
   _EquipmentPageState createState() => _EquipmentPageState();
 }
 
 class _EquipmentPageState extends State<EquipmentPage> {
-  bool _gridView = true;
+  _gridBody(context) {
+    return ListView(
+      children: <Widget>[
 
-  _body() {
-    if (_gridView) {
-      return GridView.builder(
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-        //itemCount: equipments.length,
-        itemBuilder: (context, int index) {
-          //return
-        },
-      );
-    } else {
-      return ListView.builder(
-          itemExtent: 350,
-          //itemCount: equipments.length,
-          itemBuilder: (BuildContext context, int index) {
-            //return
-          }
-      );
-    }
+      ],
+    );
+  }
+
+  _listBody(context) {
+    return ListView(
+      children: <Widget>[
+
+      ],
+    );
   }
 
   @override
@@ -42,34 +36,18 @@ class _EquipmentPageState extends State<EquipmentPage> {
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
-                child: IconButton(
-                  icon: Icon(Icons.grid_on, size: 18,),
-                  onPressed: (){
-                    print("Grid");
-                    setState(() {
-                      _gridView = true;
-                    });
-                  },
-                ),
+                child: Icon(Icons.grid_on, size: 18),
               ),
               Tab(
-                child: IconButton(
-                  icon: Icon(Icons.format_list_bulleted, size: 18,),
-                  onPressed: () {
-                    print("Lista");
-                    setState(() {
-                      _gridView = false;
-                    });
-                  },
-                ),
+                child: Icon(Icons.format_list_bulleted, size: 18),
               ),
             ],
           ),
         ),
         body: TabBarView(
           children: <Widget>[
-            _body(),
-            _body(),
+            _gridBody(context),
+            _listBody(context),
           ],
         ),
       ),
