@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class MonstersPage extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class _MonstersPageState extends State<MonstersPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+      backgroundColor: appBarColor,
       ),
     );
   }

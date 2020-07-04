@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class ItemsPage extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _ItemsPageState extends State<ItemsPage> {
       appBar: AppBar(
         title: Text('Items'),
         centerTitle: true,
+        backgroundColor: appBarColor,
       ),
     );
   }

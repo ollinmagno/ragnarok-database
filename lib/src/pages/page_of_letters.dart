@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class PageOfLetters extends StatefulWidget {
   @override
@@ -8,6 +9,12 @@ class PageOfLetters extends StatefulWidget {
 class _PageOfLettersState extends State<PageOfLetters> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cards'),
+        centerTitle: true,
+        backgroundColor: appBarColor,
+      ),
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class MapsPage extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _MapsPageState extends State<MapsPage> {
       appBar: AppBar(
         title: Text('Maps'),
         centerTitle: true,
+        backgroundColor: appBarColor,
       ),
     );
   }

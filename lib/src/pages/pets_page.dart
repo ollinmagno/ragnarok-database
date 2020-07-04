@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class PetsPage extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _PetsPageState extends State<PetsPage> {
       appBar: AppBar(
         title: Text('Pets'),
         centerTitle: true,
+        backgroundColor: appBarColor,
       ),
     );
   }
