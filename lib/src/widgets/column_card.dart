@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ragnarok/src/routes/routes.dart';
 
@@ -11,10 +12,10 @@ class ColumnCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        GestureDetector(
+        InkWell(
           onTap: () async {
-            final result = await Navigator.pushNamed(context, pageRoute);
             print("Container clicked");
+            final result = await Navigator.pushNamed(context, pageRoute);
           },
           child: Container(
             height: 112,
