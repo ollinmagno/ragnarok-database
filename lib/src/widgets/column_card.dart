@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ragnarok/src/routes/routes.dart';
 
 class ColumnCard extends StatelessWidget {
   final String img;
@@ -15,7 +14,7 @@ class ColumnCard extends StatelessWidget {
         InkWell(
           onTap: () async {
             print("Container clicked");
-            final result = await Navigator.pushNamed(context, pageRoute);
+            Navigator.pushNamed(context, pageRoute);
           },
           child: Container(
             height: 112,
