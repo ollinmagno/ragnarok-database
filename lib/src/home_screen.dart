@@ -10,6 +10,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
+
   _body() {
     return Padding(
       padding: EdgeInsets.all(16.0),
@@ -21,8 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 iconSize: 32,
                 icon: Icon(Icons.format_list_bulleted),
                 color: Colors.grey.shade500,
-                onPressed: (){},
-                //onPressed: () => Scaffold.of(context).openDrawer(),
+                onPressed: () => _scaffoldKey.currentState.openDrawer(),
               ),
               Positioned(
                 height: 260,
@@ -72,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: <Widget>[
                     ColumnCard(img: 'assets/images/potion.png', text: 'Items', pageRoute: 'items',),
                     SizedBox(width: 16),
-                    ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment', pageRoute: 'equipment',),
+                    ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment', pageRoute: 'equipment'),
                   ],
                 ),
                 SizedBox(height: 16),
@@ -97,6 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _body(),
+      key: _scaffoldKey,
       drawer: DrawerList(),
     );
   }
