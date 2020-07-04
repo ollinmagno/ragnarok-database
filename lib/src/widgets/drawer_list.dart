@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ragnarok/src/pages_drawer/about.dart';
 import 'package:ragnarok/src/utils/colors.dart';
@@ -17,7 +18,7 @@ class DrawerList extends StatelessWidget {
           ListTile(
             title: Text('About', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
             trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => About())),
+            onTap: () => Navigator.push(context, CupertinoPageRoute(builder: (context) => About())),
           ),
           ListTile(
             title: Text('Send feedback', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
