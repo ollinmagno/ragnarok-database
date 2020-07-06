@@ -11,9 +11,12 @@ class SendReportBug extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About'),
+        title: Text('Report bug'),
         centerTitle: true,
         backgroundColor: appBarColor,
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.send), onPressed: (){},),
+        ],
       ),
       body: _body(),
     );
