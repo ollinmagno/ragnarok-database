@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ragnarok/src/pages_drawer/about.dart';
 import 'package:ragnarok/src/pages_drawer/app_settings.dart';
 import 'package:ragnarok/src/pages_drawer/send_feedback.dart';
+import 'package:ragnarok/src/pages_drawer/send_report_bug.dart';
 import 'package:ragnarok/src/utils/colors.dart';
 
 class DrawerList extends StatelessWidget {
@@ -46,7 +47,7 @@ class DrawerList extends StatelessWidget {
           ListTile(
             title: Text('Report Bug', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
             trailing: Icon(Icons.bug_report, size: 26),
-            //onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => About())),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SendReportBug())),
           ),
         ],
       ),
