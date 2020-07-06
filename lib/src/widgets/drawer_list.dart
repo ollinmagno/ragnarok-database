@@ -24,11 +24,6 @@ class DrawerList extends StatelessWidget {
             onTap: () => Navigator.push(context, CupertinoPageRoute(builder: (context) => About())),
           ),
           ListTile(
-            title: Text('Send feedback', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SendFeedback())),
-          ),
-          ListTile(
             title: Text('Recent', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
             trailing: Icon(Icons.access_time, color: Colors.grey.shade600, size: 20),
             //onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => About())),
@@ -38,11 +33,16 @@ class DrawerList extends StatelessWidget {
             trailing: Icon(Icons.favorite, color: Colors.blueAccent, size: 22),
             //onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => About())),
           ),
-          Divider(height: 16, color: Colors.grey.shade600),
           ListTile(
             title: Text('Settings', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
             trailing: Icon(Icons.build, color: Colors.grey.shade600, size: 20),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AppSettings())),
+          ),
+          Divider(height: 16, color: Colors.grey.shade600),
+          ListTile(
+            title: Text('Send feedback', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SendFeedback())),
           ),
           ListTile(
             title: Text('Report Bug', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w300),),
