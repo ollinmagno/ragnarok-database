@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 import 'package:ragnarok/src/widgets/column_card.dart';
 import 'package:ragnarok/src/widgets/drawer_list.dart';
 import 'package:ragnarok/src/widgets/search.dart';
@@ -13,7 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
 
   _body() {
-    return Padding(
+    return Container(
+      color: primaryColor,
       padding: EdgeInsets.all(16.0),
       child: ListView(
         children: <Widget>[

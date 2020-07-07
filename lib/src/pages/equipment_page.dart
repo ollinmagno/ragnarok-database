@@ -32,7 +32,7 @@ class _EquipmentPageState extends State<EquipmentPage> {
         appBar: AppBar(
           title: Text('Equipments'),
           centerTitle: true,
-          backgroundColor: appBarColor,
+          backgroundColor: primaryColor,
           bottom: TabBar(
             tabs: <Widget>[
               Tab(

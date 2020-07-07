@@ -13,7 +13,7 @@ class _ItemsPageState extends State<ItemsPage> {
       appBar: AppBar(
         title: Text('Items'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
       ),
     );
   }

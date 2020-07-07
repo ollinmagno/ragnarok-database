@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ragnarok/src/utils/colors.dart';
 
 class ColumnCard extends StatelessWidget {
   final String img;
@@ -20,7 +21,8 @@ class ColumnCard extends StatelessWidget {
             height: 112,
             width: 172,
             decoration: BoxDecoration(
-                color: Colors.grey.shade300,
+                color: Colors.lightGreen,
+              //color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(16.0)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

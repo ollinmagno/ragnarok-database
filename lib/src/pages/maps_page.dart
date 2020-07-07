@@ -13,7 +13,7 @@ class _MapsPageState extends State<MapsPage> {
       appBar: AppBar(
         title: Text('Maps'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
       ),
     );
   }

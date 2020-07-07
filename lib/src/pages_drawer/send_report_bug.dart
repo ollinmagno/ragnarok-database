@@ -81,7 +81,7 @@ class _SendReportBugState extends State<SendReportBug> {
       appBar: AppBar(
         title: Text('Report bug'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
         actions: <Widget>[
           IconButton(icon: Icon(Icons.send), onPressed: (){
             print('Enviando...');

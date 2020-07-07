@@ -38,7 +38,7 @@ class About extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
       ),
       body: _body(),
     );

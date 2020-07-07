@@ -7,7 +7,7 @@ class SendFeedback extends StatefulWidget {
 }
 
 class _SendFeedbackState extends State<SendFeedback> {
-  GlobalKey _keyForm = GlobalKey<FormState>();
+  final _keyForm = GlobalKey<FormState>();
   final TextEditingController _controllerTitle = TextEditingController();
   final TextEditingController _controllerSendFeedback = TextEditingController();
 
@@ -15,7 +15,7 @@ class _SendFeedbackState extends State<SendFeedback> {
     return SingleChildScrollView(
       padding: EdgeInsets.only(top: 45, left: 16.0, right: 16.0, bottom: 16.0),
       child: Form(
-        //key: _keyForm,
+        key: _keyForm,
         child: Center(
           child: Column(
             children: <Widget>[
@@ -79,7 +79,7 @@ class _SendFeedbackState extends State<SendFeedback> {
       appBar: AppBar(
         title: Text('Feedback'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
         actions: <Widget>[
           IconButton(icon: Icon(Icons.send), onPressed: (){}),
         ],

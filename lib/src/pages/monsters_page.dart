@@ -11,7 +11,7 @@ class _MonstersPageState extends State<MonstersPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      backgroundColor: appBarColor,
+      backgroundColor: primaryColor,
       ),
     );
   }

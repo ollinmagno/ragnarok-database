@@ -13,7 +13,7 @@ class _PetsPageState extends State<PetsPage> {
       appBar: AppBar(
         title: Text('Pets'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
       ),
     );
   }

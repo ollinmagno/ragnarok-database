@@ -13,7 +13,7 @@ class _PageOfLettersState extends State<PageOfLetters> {
       appBar: AppBar(
         title: Text('Cards'),
         centerTitle: true,
-        backgroundColor: appBarColor,
+        backgroundColor: primaryColor,
       ),
     );
   }
