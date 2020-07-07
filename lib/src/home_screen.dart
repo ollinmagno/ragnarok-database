@@ -16,9 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
   _body() {
     return Container(
       color: primaryColor,
-      padding: EdgeInsets.all(16.0),
-      child: ListView(
+      padding: EdgeInsets.only(right: 16, left: 16, top: 16),
+      child: Column(
         children: <Widget>[
+          SizedBox(height: 26),
           Stack(
             children: <Widget>[
               IconButton(
