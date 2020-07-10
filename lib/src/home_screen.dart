@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       ColumnCard(
                           img: 'assets/images/monster.png', text: 'Monsters', pageRoute: 'monsters',),
-                      SizedBox(width: 16),
+                      SizedBox(width: 12),
                       ColumnCard(
                         img: 'assets/images/poring.png',
                         text: 'Pets',
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     children: <Widget>[
                       ColumnCard(img: 'assets/images/potion.png', text: 'Items', pageRoute: 'items',),
-                      SizedBox(width: 16),
+                      SizedBox(width: 12),
                       ColumnCard(img: 'assets/images/equipment.png', text: 'Equipment', pageRoute: 'equipment'),
                     ],
                   ),
@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       ColumnCard(img: 'assets/images/card-frog.png', text: 'Cards', pageRoute: 'letters'),
                       SizedBox(
-                        width: 16,
+                        width: 12,
                       ),
                       ColumnCard(img: 'assets/images/maps.png', text: 'Maps', pageRoute: 'maps'),
                     ],
