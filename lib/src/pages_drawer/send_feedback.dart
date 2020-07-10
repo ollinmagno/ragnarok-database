@@ -81,7 +81,9 @@ class _SendFeedbackState extends State<SendFeedback> {
         centerTitle: true,
         backgroundColor: primaryColor,
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.send), onPressed: (){}),
+          IconButton(icon: Icon(Icons.send), onPressed: (){
+            print('Enviando...');
+          }),
         ],
       ),
       body: _body(),
