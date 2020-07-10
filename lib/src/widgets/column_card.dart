@@ -21,7 +21,7 @@ class ColumnCard extends StatelessWidget {
             height: 112,
             width: 172,
             decoration: BoxDecoration(
-                color: Colors.lightGreen,
+                color: colorContainer,
               //color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(16.0),
                 boxShadow: [
