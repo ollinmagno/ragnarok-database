@@ -29,7 +29,7 @@ class ColumnCard extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2.25,
                     blurRadius: 2.25,
-                    offset: Offset(0, 3.5),
+                    offset: Offset(1.7, 3.5),
                   ),
                 ],
             ),
