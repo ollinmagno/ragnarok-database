@@ -23,7 +23,16 @@ class ColumnCard extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.lightGreen,
               //color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(16.0)),
+                borderRadius: BorderRadius.circular(16.0),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2.25,
+                    blurRadius: 2.25,
+                    offset: Offset(0, 3.5),
+                  ),
+                ],
+            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
