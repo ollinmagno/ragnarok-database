@@ -15,6 +15,14 @@ class Search extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.0),
                   color: Colors.grey.shade200,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 3.75,
+                      blurRadius: 2,
+                      offset: Offset(1, 3),
+                    ),
+                  ]
                 ),
                 child: TextField(
                   decoration: InputDecoration(
