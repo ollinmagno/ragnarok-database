@@ -1,16 +1,35 @@
-# ragnarok
+<h1 align="center">
+  Ragnarok database
+  <br>
+</h1>
 
-App ragnarok database
+<h4 align="center">App mobile ragnarok database</h4>
+<p align="center">
+<img src="https://img.shields.io/github/issues/ollinmagno/ragnarok-database">
+<img src="https://img.shields.io/badge/mobx-1.2.1%2B4-blue" alt="Version">
+<img src="https://img.shields.io/badge/flutter__mobx-1.1.0%2B2-blue" alt="Version">
 
-## Getting Started
+</p>
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <a href="#resources">Resources</a> |
+  <a href="#documentation">Documentation</a> |
+  <a href="#install">Install</a>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Resources
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 
+
+## Documentation
+
+- 
+
+## Install
+
+- 
+
+```
+
+```
